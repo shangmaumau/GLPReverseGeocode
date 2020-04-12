@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-ReverseGeocodeSample/Pods-ReverseGeocodeSample-resources.sh
+${PODS_ROOT}/AMap3DMap/MAMapKit.framework/AMap.bundle
+${PODS_ROOT}/BaiduMapKit/BaiduMapKit/BaiduMapAPI_Map.framework/mapapi.bundle
+${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle
