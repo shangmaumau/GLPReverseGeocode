@@ -5,6 +5,9 @@
 除了苹果地图和 OSM ，其他几个地图服务，都需要导入相应的 SDK ，在 GLPReverseGeocode.h 中，如果导入了相应的 SDK ，则取消注释相应的 define 即可。
 示例使用的是 CocoaPods 导入方式，手动导入的，可能不需要尖括号导入。
 
+# 注意
+在 SceneDelegate.m 中，需要提供自己申请的相应的地图的 SDK 的授权 key 。与此同时，你同时需要更改示例的 Bundle ID 。
+
 # 使用
 ## 方式一
 适用于同时触发多次请求的情况。在 resultHandler 中处理即可。
