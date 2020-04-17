@@ -21,7 +21,9 @@
 #import <MicrosoftMaps/MicrosoftMaps.h>
 #endif
 
-/// Apple Maps service, which is the system default map service. Limited. DO NOT request too many one time.
+#import <objc/runtime.h>
+
+/// Apple Maps service, which is the system default map service. Limited. DO NOT request too many times once.
 /// Not global, current country only.
 GLPGeocodeService const GLPGeocodeServiceApple = @"AppleReverseGeocode";
 /// AMap service. China only. No limited.
@@ -48,7 +50,17 @@ GLPGeocodeService const GLPGeocodeServiceOpenStreet = @"OpenStreetReverseGeocode
 
 @end
 
-@interface GLPReverseGeocode ()<AMapSearchDelegate, BMKGeoCodeSearchDelegate>
+@interface GLPReverseGeocode ()
+#ifdef GLPHasDelegate
+<
+#ifdef GLPAMapAvaliable
+AMapSearchDelegate,
+#endif
+#ifdef GLPBaiduMapAvaliable
+BMKGeoCodeSearchDelegate,
+#endif
+>
+#endif
 
 @property (nonatomic) CLLocationCoordinate2D coordi;
 @property (nonatomic, strong) NSMutableArray<CLLocation *> *coordinates;

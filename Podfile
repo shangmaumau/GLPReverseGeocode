@@ -12,12 +12,14 @@ target 'ReverseGeocodeSample' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
-  # pod 'AMap3DMap'
-  # pod 'AMapSearch'
-  # pod 'BaiduMapKit'
-  # pod 'GoogleMaps'
+  # uncomment the following pods, and run `pod install`
+#  pod 'AMap3DMap'
+#  pod 'AMapSearch'
+#  pod 'BaiduMapKit'
+#  pod 'GoogleMaps'
+#  pod 'MicrosoftMapsSDK'
+  
   pod 'Masonry'
   pod 'MBProgressHUD'
-  # pod 'MicrosoftMapsSDK'
   
 end

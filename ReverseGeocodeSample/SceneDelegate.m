@@ -14,10 +14,10 @@
 #import <BaiduMapAPI_Base/BMKBaseComponent.h>
 #import <MicrosoftMaps/MSMapView.h>
 
-#define AMapKey @"Use Your AMap Key"
-#define BaiduMapKey @"Use Your Baidu Map Key"
-#define MicrosoftMapsKey @"Use Your MS Maps Key"
-#define GoogleServiceUniversalKey @"Use Your Google API Key"
+#define AMapKey @"UseYourAMapKey"
+#define BaiduMapKey @"UseYourBaiduMapKey"
+#define MicrosoftMapsKey @"UseYourMicrosoftMapsKey"
+#define GoogleServiceUniversalKey @"UseYourGoogleUniversalAPIKey"
 
 @interface SceneDelegate ()<BMKGeneralDelegate>
 
@@ -39,13 +39,13 @@
     }
     
     /* AMap register set key. */
-    [[AMapServices sharedServices] setApiKey:AMapKey];
+     [[AMapServices sharedServices] setApiKey:AMapKey];
     
     /* Microsoft Maps set key, this method is not so good, 'cause it binds the auth to map view where sometimes we don't need the map view but some other functions. */
-    [MSMapView.new setCredentialsKey:MicrosoftMapsKey];
+     [MSMapView.new setCredentialsKey:MicrosoftMapsKey];
     
     /* Google Maps set key. */
-    [GMSServices provideAPIKey:GoogleServiceUniversalKey];
+    // [GMSServices provideAPIKey:GoogleServiceUniversalKey];
     
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:ViewController.new];
     [self.window makeKeyAndVisible];

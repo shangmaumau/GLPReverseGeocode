@@ -8,24 +8,29 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 
-// Uncomment the define if you have import the service.
+// Uncomment the following define if you have imported and need corresponding service.
 
 //#ifndef GLPAMapAvaliable
-//#   define GLPAMapAvaliable
+//#   define GLPAMapAvaliable 1
 //#endif
-//
+
 //#ifndef GLPBaiduMapAvaliable
-//#   define GLPBaiduMapAvaliable
+//#   define GLPBaiduMapAvaliable 1
 //#endif
 
 //#ifndef GLPGoogleMapsAvaliable
-//#   define GLPGoogleMapsAvaliable
-//#endif
-//
-//#ifndef GLPMicrosoftMapsAvaliable
-//#   define GLPMicrosoftMapsAvaliable
+//#   define GLPGoogleMapsAvaliable 1
 //#endif
 
+//#ifndef GLPMicrosoftMapsAvaliable
+//#   define GLPMicrosoftMapsAvaliable 1
+//#endif
+
+//#if GLPAMapAvaliable || GLPBaiduMapAvaliable
+//#   ifndef GLPHasDelegate
+//#       define GLPHadDelegate 1
+//#   endif
+//#endif
 
 NS_ASSUME_NONNULL_BEGIN
 
