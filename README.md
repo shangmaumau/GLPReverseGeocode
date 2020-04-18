@@ -36,4 +36,4 @@
 ```
 
 # License
-GLPReverseGeocode 使用 [MIT license](http://opensource.org/licenses/MIT) 。
+GLPReverseGeocode 使用 [MIT License](http://opensource.org/licenses/MIT) 。
