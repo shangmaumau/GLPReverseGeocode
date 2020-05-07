@@ -6,7 +6,7 @@
 示例使用的是 CocoaPods 导入方式，手动导入的，可能不需要尖括号导入。
 
 # 注意
-在 SceneDelegate.m 中，需要提供自己申请的相应的地图的 SDK 的授权 key 。与此同时，你同时需要更改示例的 Bundle ID 。
+在 SceneDelegate.m 中，需要提供自己申请的相应的地图的 SDK 的授权 key 。与此同时，你可能需要更改示例的 Bundle ID 。
 
 # 使用
 ## 方式一
